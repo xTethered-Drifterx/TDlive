@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* This makes the web page itself invisible in PRISM */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent; 
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        video {
+            /* Adjust width to scale the logo size on your HUD */
+            width: 100%; 
+            height: auto;
+
+            /* THE CRITICAL PIECE: This removes the black background */
+            mix-blend-mode: screen; 
+
+            /* Boosts the 'glow' of the circuit boards and lightning */
+            filter: brightness(1.3) contrast(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted playsinline>
+        <source src="366.webm" type="video/webm">
+    </video>
+
+</body>
+</html>
